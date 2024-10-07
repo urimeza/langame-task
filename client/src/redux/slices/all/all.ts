@@ -17,7 +17,7 @@ interface AllState {
 
 const initialState: AllState = {
   load: true,
-  user: "Алексей Костылев Николаевич",
+  user: null,
   main: false,
   tariffs: [
     { id: 1, name: "Часовой тариф", price: 100 },
