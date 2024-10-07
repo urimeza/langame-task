@@ -1,0 +1,420 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.backgroundImg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+.timer {
+  position: fixed;
+  font-family: "Nitti PX", sans-serif;
+  right: 0vw;
+  bottom: 0vh;
+  min-height: 10vh;
+  min-width: 10vw;
+  font-size: 270%;
+  font-weight: 700;
+
+letter-spacing: 2px;
+
+}
+
+.mediaFlexDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+body {
+  position: fixed;
+  min-height: 100%;
+  height: auto;
+  width: 100%;
+}
+
+.footerDiv {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  bottom: 0;
+  left: 0;
+  background-color: transparent;
+  height: 10%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.rowDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1%;
+  font-family: "Lato", sans-serif;
+  p {
+    font-family: "Lato", sans-serif;
+    white-space: nowrap;
+    margin-left: 3%;
+    margin-right: 3%;
+    font-size: 85%;
+    cursor: pointer;
+  }
+  p:hover {
+    color: rgb(29, 29, 29);
+  }
+}
+
+.rowDivBottom {
+  margin-bottom: 0%;
+}
+
+.spinnerFixed {
+  position: fixed;
+  display: flex;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.backForm {
+  margin-top: 5%;
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 0;
+  height: auto;
+  width: 100%;
+  min-height: 70%;
+  justify-content: center;
+  align-items: center;
+}
+
+.formSignIn {
+  font-family: "Lato", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  margin-bottom: 5%;
+}
+
+.formSignIn__label {
+  width: 50%;
+  display: flex;
+  margin-bottom: 3%;
+}
+
+.formSignIn__input {
+  background: #efefef;
+  width: 100%;
+  border-radius: 0.5vw;
+  border: 0;
+  padding: 9%;
+  box-sizing: border-box;
+}
+
+.formSignIn__image {
+  margin-bottom: 5%;
+}
+
+.formSignIn__forgot-button {
+  margin-top: 1%;
+  font-size: 80%;
+  background: none;
+  color: #141414;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.formSignIn__submit-button {
+  font-size: 80%;
+  font-weight: 700;
+  background: #dc0000;
+  border-radius: 2vw;
+  margin-top: 3%;
+  width: 50%;
+  min-height: 7vh;
+  color: white;
+  cursor: pointer;
+}
+
+.formSignIn__submit-button:hover {
+  background: #cb1818;
+}
+
+.formSignIn__link {
+  text-decoration: none;
+  margin-top: 5%;
+  font-weight: 700;
+  color: #dc0000;
+}
+
+.formSignIn__bottomFormLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10%;
+  font-size: 90%;
+}
+
+.formSignIn__apk {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 3%;
+  img {
+    cursor: pointer;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+}
+
+@media only screen and (min-width: 1920px) and (min-height: 1080px) {
+  .formSignIn__forgot-button {
+    margin-top: 0%;
+  }
+
+  .formSignIn__submit-button {
+    margin-top: 7%;
+    min-height: 5vh;
+    font-size: 100%;
+  }
+
+  .formSignIn__bottomFormLink {
+    margin-top: 12%;
+  }
+
+  .formSignIn__apk {
+    margin-top: 7%;
+    img {
+      cursor: pointer;
+      margin-left: 4%;
+      margin-right: 4%;
+    }
+  }
+}
+
+@media only screen and (min-width: 2560px) and (min-height: 1440px) {
+  .formSignIn {
+    width: 45%;
+  }
+
+  .formSignIn__image {
+    width: 150px;
+  }
+
+  .formSignIn__forgot-button {
+    margin-top: 3%;
+    font-size: 120%;
+  }
+
+  .formSignIn__submit-button {
+    margin-top: 5%;
+    min-height: 6vh;
+    font-size: 150%;
+  }
+
+  .formSignIn__bottomFormLink {
+    margin-top: 13%;
+    font-size: 120%;
+  }
+
+  .formSignIn__apk {
+    font-size: 130%;
+    margin-top: 3%;
+    img {
+      cursor: pointer;
+      width: 300px;
+      margin-left: 4%;
+      margin-right: 4%;
+    }
+  }
+
+  .formSignIn__input {
+    font-size: 180%;
+    padding: 7%;
+  }
+
+  .rowDiv {
+    margin-bottom: 1%;
+    p {
+      font-size: 105%;
+    }
+  }
+
+  .formSignIn__bottomFormLink {
+    p {
+      font-size: 120%;
+    }
+  }
+
+  .footerLogo {
+    width: 400px;
+  }
+}
+
+@media only screen and (min-width: 3840px) and (min-height: 2160px) {
+  .formSignIn {
+    width: 45%;
+  }
+
+  .formSignIn__image {
+    width: 400px;
+  }
+
+  .formSignIn__forgot-button {
+    margin-top: 1%;
+    font-size: 200%;
+  }
+
+  .formSignIn__submit-button {
+    margin-top: 5%;
+    min-height: 6vh;
+    font-size: 200%;
+  }
+
+  .formSignIn__bottomFormLink {
+    margin-top: 12%;
+    font-size: 160%;
+  }
+
+  .formSignIn__apk {
+    font-size: 160%;
+    margin-top: 3%;
+    img {
+      cursor: pointer;
+      width: 400px;
+      margin-left: 4%;
+      margin-right: 4%;
+    }
+  }
+
+  .formSignIn__input {
+    font-size: 260%;
+    padding: 7%;
+  }
+
+  .formSignIn__link {
+    font-size: 160%;
+  }
+
+  .formSignIn__bottomFormLink {
+    p {
+      font-size: 160%;
+    }
+  }
+
+  .rowDiv {
+    margin-bottom: 1%;
+    p {
+      font-size: 155%;
+    }
+  }
+
+  .footerLogo {
+    width: 600px;
+  }
+}
+
+@media only screen and (min-width: 3440px) and (min-height: 1440px) {
+  .formSignIn {
+    width: 45%;
+  }
+
+  .formSignIn__image {
+    width: 200px;
+  }
+
+  .formSignIn__forgot-button {
+    margin-top: 1%;
+    font-size: 200%;
+  }
+
+  .formSignIn__submit-button {
+    margin-top: 5%;
+    min-height: 6vh;
+    font-size: 200%;
+  }
+
+  .formSignIn__bottomFormLink {
+    margin-top: 7%;
+    font-size: 160%;
+  }
+
+  .formSignIn__apk {
+    font-size: 160%;
+    margin-top: 3%;
+    img {
+      cursor: pointer;
+      width: 400px;
+      margin-left: 4%;
+      margin-right: 4%;
+    }
+  }
+
+  .formSignIn__input {
+    font-size: 160%;
+    padding: 7%;
+  }
+
+  .formSignIn__link {
+    font-size: 160%;
+  }
+
+  .formSignIn__bottomFormLink {
+    p {
+      font-size: 160%;
+    }
+  }
+
+  .rowDiv {
+    margin-bottom: 1%;
+    p {
+      font-size: 155%;
+    }
+  }
+
+  .footerLogo {
+    width: 600px;
+  }
+
+  .mediaFlexDiv {
+    flex-direction: row;
+  }
+
+  .backForm {
+    margin-top: 2%;
+  }
+}
+
+@media only screen and (min-width: 3440px) and (min-height: 1850px) {
+  .mediaFlexDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 5%;
+  }
+
+  .formSignIn__bottomFormLink {
+    margin-top: 12%;
+    font-size: 160%;
+  }
+}

@@ -1,0 +1,630 @@
+.backFormSignUp {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.signUpFormdiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lato", sans-serif;
+  p {
+    font-weight: 700;
+    font-size: 120%;
+  }
+}
+
+.formSignup {
+  margin-top: 3%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonActionReg {
+  cursor: pointer;
+  width: 10%;
+  padding: 1%;
+  padding-top: 0.7%;
+  padding-bottom: 0.7%;
+  border: none;
+  border-radius: 2vw;
+  margin: 2%;
+  margin-bottom: 1%;
+  font-weight: 700;
+}
+
+.variatActions {
+  width: 120%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.mainFormSignUp {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.formSignup__fullReg {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: #dc0000;
+  color: white;
+  font-size: 70%;
+  img {
+    position: relative;
+    right: -15%;
+  }
+}
+
+.formSignup__simpleReg {
+  background: #efefef;
+  font-size: 70%;
+}
+
+.formSignUp__label {
+  width: 40%;
+}
+
+.formSignUp__input {
+  background: #efefef;
+  width: 100%;
+  border-radius: 0.5vw;
+  border: 0;
+  padding: 4%;
+  box-sizing: border-box;
+  padding-left: 10%;
+  font-weight: bold;
+  font-size: 100%;
+}
+
+.formSignUp__rowTwoInputs {
+  width: 40%;
+  margin-top: 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.formSignUp__labelTwo {
+  width: 47%;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputsTwo {
+  padding-bottom: 8%;
+  padding-top: 10%;
+}
+
+.forcheckboxAndLabel {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  white-space: nowrap;
+  p {
+    font-weight: normal;
+    font-size: 90%;
+    margin-left: 3%;
+  }
+}
+
+.signup-submitbutton {
+  background: #dc0000;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: white;
+  width: 40%;
+  min-height: 5vh;
+  border-radius: 2vw;
+  margin-top: 2%;
+  cursor: pointer;
+}
+
+.signup-backbutton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: #f3f3f3;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  border: solid 1px black;
+  width: 40%;
+  min-height: 5vh;
+  border-radius: 2vw;
+  margin-top: 2%;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 85%;
+  img {
+    position: relative;
+    left: -3%;
+  }
+}
+
+.input-invalid {
+  border: solid 2px red;
+}
+
+.input-valid {
+  border: solid 2px rgb(15, 235, 4);
+}
+
+.birthday-container,
+.password-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.calendar-button,
+.passHelper {
+  position: absolute;
+  cursor: pointer;
+}
+
+.calendar-button {
+  margin-left: 10%;
+}
+
+.passHelper {
+  margin-left: 50%;
+  margin-top: 10%;
+}
+
+.error-message {
+  position: absolute;
+  color: red;
+  font-size: 75%;
+  white-space: nowrap;
+  margin-top: 27%;
+}
+
+.error-messageFIO {
+  position: absolute;
+  top: 0;
+  color: red;
+  font-size: 75%;
+  margin-top: 12%;
+  white-space: nowrap;
+}
+
+.formSignUp__label {
+  position: relative;
+  width: 40%;
+}
+
+.formSignUp__labelTwo {
+  position: relative;
+  width: 47%;
+  display: flex;
+  flex-direction: column;
+}
+
+.floating-placeholder {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: #a4a3a3;
+  transition: 0.2s ease all;
+  font-size: 90%;
+  margin-left: 5%;
+  pointer-events: none;
+}
+
+.formSignUp__input:focus + .floating-placeholder,
+.formSignUp__input:not(:placeholder-shown) + .floating-placeholder {
+  top: 0;
+  font-size: 80%;
+  color: #6b6b6b;
+  background-color: transparent;
+  padding: 0 0px;
+  margin-top: 1.5%;
+  left: 5%;
+  transform: translate(0px, 0%);
+}
+
+.formSignUp__input:focus + .more,
+.formSignUp__input:not(:placeholder-shown) + .more {
+  top: 0;
+  font-size: 80%;
+  color: #6b6b6b;
+  background-color: transparent;
+  padding: 0 0px;
+  margin-top: 5%;
+  transform: translate(0px, 0%);
+}
+
+.noFioInput {
+  padding-left: 15%;
+}
+
+.more {
+  margin-top: 0%;
+  margin-left: 10%;
+}
+
+.floating-placeholder {
+  width: 100%;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.inputIconsFio {
+  pointer-events: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: absolute;
+  width: 95%;
+  margin-left: 2.5%;
+  margin-top: 4%;
+}
+
+.inputIcons {
+  pointer-events: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: absolute;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 10%;
+}
+
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+
+.toggle-switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #e7e7e7;
+  transition: 0.4s;
+  border-radius: 24px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 90%;
+  width: 50%;
+  left: 3%;
+  bottom: 2px;
+  background-color: red;
+  transition: 0.4s;
+  border-radius: 50%;
+
+  background-image: url("../../public/image/signup/no.svg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+input:checked + .slider:before {
+  transform: translateX(90%);
+  background-color: red;
+  background-image: url("../../public/image/Shape.svg");
+  background-size: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: none;
+  background-color: #e7e7e7;
+  color: black;
+}
+
+@media only screen and (min-width: 1920px) and (min-height: 1080px) {
+  .formSignUp__input {
+    font-size: 120%;
+  }
+}
+
+@media only screen and (min-width: 2560px) and (min-height: 1440px) {
+  .formSignUp__input {
+    font-size: 140%;
+  }
+
+  .formSignUp__input:focus + .floating-placeholder,
+  .formSignUp__input:not(:placeholder-shown) + .floating-placeholder {
+    font-size: 120%;
+  }
+
+  .more,
+  .floating-placeholder {
+    font-size: 120%;
+  }
+
+  .formSignUp__input:focus + .more,
+  .formSignUp__input:not(:placeholder-shown) + .more {
+    font-size: 120%;
+  }
+  .inputIcons {
+    img {
+      width: 4%;
+    }
+    .checkedInput {
+      width: 7%;
+      margin-top: -1%;
+      margin-right: -1%;
+    }
+  }
+
+  .inputIconsFio {
+    img {
+      width: 3%;
+    }
+    .checkedInput {
+      width: 2.8%;
+    }
+  }
+
+  .error-message,
+  .error-messageFIO {
+    font-size: 110%;
+  }
+
+  .forcheckboxAndLabel {
+    p {
+      font-size: 130%;
+    }
+  }
+  .toggle-switch {
+    width: 70px;
+    height: 35px;
+  }
+
+  .buttonActionReg {
+    font-size: 130%;
+    img {
+      width: 10%;
+    }
+  }
+
+  .buttonsBottomActions {
+    font-size: 130%;
+    img {
+      width: 3.5%;
+    }
+  }
+
+  .formSignup {
+    p {
+      font-size: 180%;
+    }
+  }
+
+  .calendar-button {
+    margin-left: -10%;
+    margin-top: 4%;
+    img {
+      width: 150%;
+    }
+  }
+
+  .passHelper {
+    font-size: 130%;
+  }
+}
+
+@media only screen and (min-width: 3840px) and (min-height: 2160px) {
+  .formSignUp__input {
+    font-size: 200%;
+  }
+
+  .formSignUp__input:focus + .floating-placeholder,
+  .formSignUp__input:not(:placeholder-shown) + .floating-placeholder {
+    font-size: 160%;
+  }
+
+  .more,
+  .floating-placeholder {
+    font-size: 160%;
+  }
+
+  .formSignUp__input:focus + .more,
+  .formSignUp__input:not(:placeholder-shown) + .more {
+    font-size: 160%;
+  }
+  .inputIcons {
+    img {
+      width: 5%;
+    }
+    .checkedInput {
+      width: 8%;
+      margin-top: -1%;
+      margin-right: -1%;
+    }
+  }
+
+  .inputIconsFio {
+    img {
+      width: 3%;
+    }
+    .checkedInput {
+      width: 3.3%;
+    }
+  }
+
+  .error-message,
+  .error-messageFIO {
+    font-size: 160%;
+  }
+
+  .forcheckboxAndLabel {
+    p {
+      font-size: 160%;
+    }
+  }
+
+  .buttonActionReg {
+    font-size: 160%;
+    img {
+      width: 10%;
+    }
+  }
+
+  .buttonsBottomActions {
+    font-size: 170%;
+    img {
+      width: 3%;
+    }
+  }
+
+  .formSignup {
+    p {
+      font-size: 270%;
+    }
+  }
+
+  .passHelper {
+    font-size: 170%;
+  }
+
+  .calendar-button {
+    margin-left: -10%;
+    margin-top: 4%;
+    img {
+      width: 250%;
+    }
+  }
+}
+
+@media only screen and (min-width: 3440px) and (min-height: 1440px) {
+  .formSignUp__input {
+    font-size: 160%;
+  }
+
+  .formSignUp__input:focus + .floating-placeholder,
+  .formSignUp__input:not(:placeholder-shown) + .floating-placeholder {
+    font-size: 140%;
+  }
+
+  .more,
+  .floating-placeholder {
+    font-size: 140%;
+  }
+
+  .formSignUp__input:focus + .more,
+  .formSignUp__input:not(:placeholder-shown) + .more {
+    font-size: 140%;
+  }
+  .inputIcons {
+    img {
+      width: 5%;
+    }
+    .checkedInput {
+      width: 8%;
+      margin-top: -1%;
+      margin-right: -1%;
+    }
+  }
+
+  .inputIconsFio {
+    img {
+      width: 3%;
+    }
+    .checkedInput {
+      width: 3.3%;
+    }
+  }
+
+  .error-message,
+  .error-messageFIO {
+    font-size: 160%;
+  }
+
+  .formSignUp__rowTwoInputs,
+  .forcheckboxAndLabel,
+  .forcheckboxAndLabelP {
+    p {
+      font-size: 110%;
+    }
+  }
+
+  .buttonActionReg {
+    font-size: 160%;
+    img {
+      width: 10%;
+    }
+  }
+
+  .buttonsBottomActions {
+    font-size: 170%;
+    img {
+      width: 3%;
+    }
+  }
+
+  .formSignup {
+    p {
+      font-size: 270%;
+    }
+  }
+
+  .passHelper {
+    font-size: 170%;
+  }
+
+  .calendar-button {
+    margin-left: -10%;
+    margin-top: 4%;
+    img {
+      width: 150%;
+    }
+  }
+
+  .formSignup {
+    width: 80%;
+    height: 80%;
+    margin-top: 1%;
+  }
+
+  .variatActions {
+    margin-top: -1%;
+  }
+}
