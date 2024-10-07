@@ -4,6 +4,10 @@
   border: none;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 .backgroundImg {
   position: fixed;
   width: 100%;
